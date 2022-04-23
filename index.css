@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@400;600;700&display=swap");
 
 html {
     box-sizing: border-box;
@@ -20,6 +20,8 @@ img {
     max-width: 100%;
     display: block;
 }
+
+/* Header */
 
 header {
     /* border: 1px red solid; */
@@ -136,7 +138,7 @@ header {
 }
 
 @media (max-width: 768px) {
-    .banner{
+    .banner {
         height: 230px;
     }
     .img-banner {
@@ -155,4 +157,107 @@ header {
         line-height: 24px;
         text-align: center;
     }
+}
+
+/* Store */
+
+.store {
+    border: 1px red solid;
+    height: 590px;
+    background: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    margin: 0 15px;
+}
+
+.titleStore {
+    border: 1px purple solid;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 15px;
+}
+
+.productsContainer {
+    border: 1px violet solid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 15px;
+}
+
+.cardProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+}
+
+.discount {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px;
+    color: #5e18bb;
+    background-color: #f0e3fe;
+    border-radius: 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+.price {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    text-align: justify;
+}
+.actualPrice {
+    color: #332927;
+    margin-right: 4px;
+}
+.lastPrice {
+    color: #b8b4b4;
+    text-decoration-line: line-through;
+}
+.nameProduct {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #332927;
+    width: 194px;
+    height: 72px;
+    margin: 8px 0;
+}
+.btnAddProduct {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+
+    position: static;
+    width: 100%;
+    height: 40px;
+    background: #0ac763;
+    border-radius: 8px;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fefefe;
 }
