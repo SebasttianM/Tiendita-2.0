@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap');
+
+html {
+    box-sizing: border-box;
+    /* 1rem igual a 10px*/
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* imagenes acomodar siempre al ancho*/
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.container-carrito {
+    /* border: 1px green solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.buttonCarrito {
+    height: 40px;
+    padding: 10px;
+    width: 89px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #0ac763;
+    
+}
+.numeroCarrito {
+    margin: 0 5px;
+}
+.locationCarrito {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:768px){
+    .container-carrito{
+        justify-content: flex-end;
+    }
+    .locationCarrito{
+        /* border: 1px blue solid; */
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+
+
+    }
+    .rayita{
+        display: none;
+    }
+    
+}
+
+.locationLogo {
+    color: #fc462d;
+}
+.tienditaTitle {
+   
+    width: 92px;
+    height: 16px;
+    margin-left: 20px;
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 16px;
+
+    color: #fc462d;
+}
+.mexicotexto {
+    margin: 0 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #332927;
+}
+.rayita {
+    border: 1px solid #b8b4b4;
+    transform: rotate(90deg);
+    width: 40px;
+    height: 0px;
+}
