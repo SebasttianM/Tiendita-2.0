@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap");
 
 html {
     box-sizing: border-box;
@@ -45,7 +44,6 @@ header {
     border: none;
     color: white;
     background-color: #0ac763;
-    
 }
 .numeroCarrito {
     margin: 0 5px;
@@ -55,32 +53,10 @@ header {
     align-items: center;
 }
 
-@media (max-width:768px){
-    .container-carrito{
-        justify-content: flex-end;
-    }
-    .locationCarrito{
-        /* border: 1px blue solid; */
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 80px;
-        left: 0px;
-        width: 100%;
-
-
-    }
-    .rayita{
-        display: none;
-    }
-    
-}
-
 .locationLogo {
     color: #fc462d;
 }
 .tienditaTitle {
-   
     width: 92px;
     height: 16px;
     margin-left: 20px;
@@ -106,4 +82,77 @@ header {
     transform: rotate(90deg);
     width: 40px;
     height: 0px;
+}
+.esconder {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container-carrito {
+        justify-content: flex-end;
+    }
+    .locationCarrito {
+        /* border: 1px blue solid; */
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+    }
+    .rayita {
+        display: none;
+    }
+    .mexicotexto {
+        font-size: 12px;
+    }
+    .esconder {
+        display: inline-block;
+        margin-left: 5px;
+        color: #fc462d;
+    }
+}
+
+/* Banner */
+
+.banner {
+    /* border: 1px red solid; */
+    color: #fefefe;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.img-banner {
+    margin: 15px auto;
+    position: absolute;
+    padding: 0 15px;
+}
+
+.title-banner {
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    .banner{
+        height: 230px;
+    }
+    .img-banner {
+        margin: 60px auto;
+        padding: 0px 10px;
+        height: 125px;
+    }
+    .title-banner {
+        width: 242px;
+        height: 47.69px;
+
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
 }
