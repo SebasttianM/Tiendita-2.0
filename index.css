@@ -1,33 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@400;600;700&display=swap");
-
+@import "/styles/modal.css";
 html {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     /* 1rem igual a 10px*/
 }
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: inherit !important;
 }
 body {
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    line-height: 2;
+    font-family: "Raleway", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 2 !important;
 }
 
 /* imagenes acomodar siempre al ancho*/
 img {
-    max-width: 100%;
-    display: block;
+    max-width: 100% !important;
+    display: block !important;
 }
 
 /* Header */
 
 header {
     /* border: 1px red solid; */
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-top: 15px !important;
 }
 .container-carrito {
     /* border: 1px green solid; */
@@ -172,10 +172,11 @@ header {
     box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
     margin: 0 15px;
+    overflow: hidden;
 }
 
 .titleStore {
-    border: 1px purple solid;
+    /* border: 1px purple solid; */
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -184,19 +185,21 @@ header {
 }
 
 .productsContainer {
-    border: 1px violet solid;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0 15px;
+    border: 1px violet solid !important;
+    width: 1100px !important;
+    display: flex !important;
+    flex-direction: row!important;
+    align-items: flex-start !important;
+    margin: 0 15px !important;
+    overflow-x: scroll !important;
 }
 
 .cardProduct {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: static;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 0px !important;
+    margin: 0 22px !important;
 }
 
 .discount {
@@ -261,3 +264,19 @@ header {
     line-height: 16px;
     color: #fefefe;
 }
+
+@media (max-width:768px) {
+    .productsContainer::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .productsContainer {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
+
+/* Modal */
+
+.modalProduct{}
