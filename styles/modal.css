@@ -1,27 +1,109 @@
-.modal-dialog{
+.modal-dialog {
     position: absolute !important;
     top: 50px !important ;
-} 
+}
 
-.modal-content{
+.modal-content {
+    border: 1px purple solid;
     width: 1068px !important;
-height: 1186px !important;
+    height: 1186px !important;
     top: 0 !important;
     left: 0 !important;
     position: absolute !important;
-    display: flex !important;
-} 
-
-.modal-body{
-    display: flex !important;
-    width: auto;
+    
 }
-.modalProduct{
-    width: 988px;
+
+.modal-body {
+    display: flex !important;
+    
+}
+.modalProduct {
+    width: 1068px;
+    height: 1186px;
     border: 1px red solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 522px;
+    left: 40px;
+    top: 40px;
+ 
+    background: #FEFEFE;
+border-radius: 16px;
+    
 }
 
-
-.modalImg{
+.modalImg {
     border: 1px;
+    width: 522px;
+    height: 522px;
+    left: 0px;
+    top: 0px;
+}
+
+.modalOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+}
+
+.modalDescription {
+    border: 1px blue solid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 442px;
+    height: 182px;
+    left: 0px;
+    top: 90px;
+}
+.Name {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #332927;
+}
+.Price{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+color: #332927;
+}
+
+.productDescription {
+    display: flex;
+    border: 1px green solid;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 442px;
+    height: 182px;
+    left: 0px;
+    top: 90px;
+}
+.iva {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #332927;
+}
+.priceAdvise {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #332927;
 }
