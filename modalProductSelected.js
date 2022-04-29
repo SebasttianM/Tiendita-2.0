@@ -1,12 +1,12 @@
-const modalProduct = async (product, modal, data) => {
+const modalProduct = async (product, modal) => {
     const prod = await product;
     // console.log(data)
-    const datos= await data
+    // const datos = await data;
 
     modal.innerHTML = "";
-    console.log(prod)
-        const { imagen, nombre, precio, id } = prod;
-        modal.innerHTML += `
+    console.log(prod);
+    const { imagen, nombre, precio, id } = prod;
+    modal.innerHTML += `
         <div class="modalProduct">
             <img class="modalImg" src=${imagen} alt=''/>
             <div class="modalOrder">
@@ -31,30 +31,28 @@ const modalProduct = async (product, modal, data) => {
                         <button class="btnAdd">Agregar</button>
                     </div>
                 </div>
-                <div class="relatedProducts">
-                </div>
+                
             </div>
         </div>
-
         `;
-        // datos.forEach((ele)=>{
-        //     modal.innerHTML += `
-        //     <div class="relatedProducts">  
-        //     <div class="productContainer">
-        //     <div class="cardProduct">
-        //         <span class="discount">32%dto</span>
-        //         <img class="imgProduct" src=${ele.imagen} alt="">
-        //         <div class="price">
-        //         <p class="actualPrice">${ele.precio}/kg</p>
-        //         <p class="lastPrice">$${ele.precio}/kg</p>
-        //         </div>
-        //         <p class="nameProduct">${ele.nombre}</p>
-        //     </div>
-        //     </div>
-        //     </div>
-         
-        //     `;
-        // })    
+    // datos.forEach((ele)=>{
+    //     modal.innerHTML += `
+    //     <div class="modal-footer" id="modalProductsRelated">
+      
+    //     <div class="cardModalProduct">
+    //         <span class="discount">32%dto</span>
+    //         <img class="imgProduct" src=${ele.imagen} alt="">
+    //         <div class="price">
+    //         <p class="actualPrice">${ele.precio}/kg</p>
+    //         <p class="lastPrice">$${ele.precio}/kg</p>
+    //         </div>
+    //         <p class="nameProduct">${ele.nombre}</p>
+    //     </div>
+        
+    //     </div>
+
+    //     `;
+    // })
 };
 
 export default modalProduct;

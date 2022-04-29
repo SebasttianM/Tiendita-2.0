@@ -1,12 +1,14 @@
 import getData from "./getData.js";
 import modalProduct from "./modalProductSelected.js";
 import showData from "./showData.js"
+import showDataModal from "./showDataModal.js";
 
 const productsContainer=document.getElementById("productsContainer");
 const losMasPopulares = document.getElementById("losMasPopulares");
 const modalProductoSeleccionado = document.getElementById(
     "modalProductoSeleccionado"
 );
+const modalProductsRelated= document.getElementById("modalProductsRelated")
 
 const urlProducts = "https://api-prueba-productos.herokuapp.com/productos";
 
@@ -15,6 +17,8 @@ document.addEventListener("DOMContentLoaded", async() => {
     const populares= data.slice(5,10)
     showData(data, productsContainer);
     showData(populares, losMasPopulares);
+    showDataModal(data, modalProductsRelated);
+    showDataModal(populares);
     
 });
 
@@ -27,6 +31,6 @@ productsContainer.addEventListener("click",async (e)=>{
         console.log(listData)
         const productSelect= listData.find((pro)=>pro.id===id)        
         console.log(productSelect)
-        modalProduct(productSelect, modalProductoSeleccionado, listData)
+        modalProduct(productSelect, modalProductoSeleccionado, listData, modalProductsRelated)
     }
 })
