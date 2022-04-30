@@ -4,7 +4,6 @@
     align-items: center;
     align-content: center;
     top: 50px !important ;
-    height: 100vh;
 }
 
 .modal-content {
@@ -213,18 +212,16 @@
     top: 586px; */
     border: 1px brown solid;
     overflow: hidden;
-        margin: 0 15px;
-            background: #fefefe;
+    margin: 0 15px;
+    background: #fefefe;
     box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
-
-
 }
 
 .productsRelated {
     display: flex !important;
     flex-direction: row !important;
     align-items: flex-start !important;
-    padding: 0px!important;
+    padding: 0px !important;
 
     width: 1162px !important;
     height: 418px !important;
@@ -233,12 +230,177 @@
     overflow-x: scroll !important;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+    .modalProduct {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+
+        position: absolute;
+        width: 328px;
+        height: 400px;
+        left: 16px;
+        top: 16px;
+    }
+    .modalImg {
+        width: 190px;
+        height: 190px;
+        left: 53px;
+        top: 0px;
+        margin: 16px 0px;
+        padding: 0;
+    }
+    .modalOrder {
+        width: 296px;
+        height: 182px;
+        left: 0px;
+        top: 206px;
+    }
+    .modalDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: static;
+        width: 296px;
+        height: 452px;
+        left: 16px;
+        top: 16px;
+    }
+    .Name {
+        width: 296px;
+        height: 42px;
+        left: 0px;
+        top: 0px;
+
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .Price {
+        width: 296px;
+        height: 36px;
+        left: 0px;
+        top: 58px;
+    }
+
+    .productDescription {
+        width: 296px;
+        height: 72px;
+        left: 0px;
+        top: 110px;
+    }
+
+    .iva {
+        position: static;
+        width: 296px;
+        height: 16px;
+        left: 0px;
+        top: 0px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .priceAdvise {
+        width: 296px;
+        height: 48px;
+        left: 0px;
+        top: 24px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 8px 0px;
+    }
+
+    .modalSelection {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: static;
+        width: 296px;
+        height: 200px;
+        left: 16px;
+        top: 492px;
+        margin: 24px 0px;
+    }
+
+    .Select {
+        width: 304px;
+        height: 24px;
+        left: 0px;
+        top: 0px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .toSelect {
+        padding: 12px 16px;
+        position: static;
+        width: 296px;
+        height: 48px;
+        left: 0px;
+        top: 32px;
+        border: 1px solid #b8b4b4;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    .btnSelection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 0px 0px;
+        width: 296px;
+        height: 112px;
+        left: 0px;
+        top: 88px;
+    }
+    .unity {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 8px 24px; */
+
+        width: 296px;
+        /* height: 40px; */
+        left: 0px;
+        top: 8px;
+        background: #fefefe;
+        box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        margin: 0px 24px -10px;
+    }
+
+    .btnAdd {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+
+        width: 296px;
+        height: 40px;
+        left: 0px;
+        top: 72px;
+        border-radius: 8px;
+        margin: 24px 0px;
+    }
     .productsRelated::-webkit-scrollbar {
         display: none;
     }
 
     /* Hide scrollbar for IE, Edge and Firefox */
+    .modal-footer {
+        height: 495px;
+    }
     .productsRelated {
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
